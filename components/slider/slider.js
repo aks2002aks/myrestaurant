@@ -5,7 +5,7 @@ import { IMAGES } from "./Images";
 const preloadImages = (images, callback) => {
   let loadedImages = 0;
 
-  images.forEach((image) => {
+  images.forEach((image, index) => {
     const img = new Image();
     img.src = image.imageSrc;
     img.onload = () => {
@@ -17,7 +17,7 @@ const preloadImages = (images, callback) => {
   });
 };
 
-const App = ({ restaurantName }) => {
+const App = ({ restaurantName ,homeRef}) => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
@@ -32,33 +32,31 @@ const App = ({ restaurantName }) => {
   }, []);
 
   useEffect(() => {
+    let interval;
     if (imagesLoaded) {
-      const interval = setInterval(() => {
+      interval = setInterval(() => {
         const newImageIndex = (activeImageIndex + 1) % IMAGES.length;
         swipeToImage(newImageIndex);
       }, 5000); // Replace image after 5 seconds
-
-      return () => clearInterval(interval);
     }
+
+    return () => clearInterval(interval);
   }, [activeImageIndex, imagesLoaded]);
 
-  useEffect(() => {
-    // Disable scroll
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      // Enable scroll when component unmounts
-      document.body.style.overflow = "auto";
-    };
-  }, []);
-
   return (
-    <main className="relative h-screen justify-center items-center bg-black">
-      <AnimatePresence initial={false}>
+    <main className="relative h-screen justify-center items-center bg-black" ref={homeRef}>
+      <AnimatePresence mode="wait">
         {imagesLoaded && (
-          <motion.div key={activeImageIndex} className="relative w-full h-full">
+          <motion.div
+            key={activeImageIndex}
+            className="relative w-full h-full"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+          >
             <motion.img
-              className="w-full h-full object-cover "
+              className="w-full h-full object-cover"
               src={IMAGES[activeImageIndex].imageSrc}
               alt={`Image ${activeImageIndex + 1}`}
               initial={{ scale: 0, opacity: 0 }}
@@ -73,7 +71,7 @@ const App = ({ restaurantName }) => {
               exit={{ opacity: 0 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
-              <p className=" text-white">
+              <p className="text-white">
                 <span className="text-md sm:text-lg md:text-2xl font-bold border px-2">
                   {restaurantName} Restaurant
                 </span>

@@ -1,15 +1,11 @@
-import fs from "fs";
+import { readJsonFile } from "@/utils/readJson";
 
 export default function handler(req, res) {
   if (req.method === "GET") {
     try {
-      const jsonData = fs.readFileSync(
-        "E:\\restaurant\\myrestaurant\\json\\restaurantData.json",
-        "utf8"
-      );
-
-      const data = JSON.parse(jsonData);
-      res.status(200).json(data);
+      const data = readJsonFile();
+      const ambiance = data.restaurant.ambiance;
+      res.status(200).json(ambiance);
     } catch (error) {
       res.status(500).json({ error: "Internal Server Error" });
     }

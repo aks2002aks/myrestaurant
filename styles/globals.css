@@ -2,3 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Vertical scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px; /* Adjust color as needed */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 5px; /* Adjust color as needed */
+}
+
+/* Horizontal scrollbar */
+::-webkit-scrollbar {
+  height: 6px; /* Adjust as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px; /* Adjust color as needed */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 5px; /* Adjust color as needed */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
