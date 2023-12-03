@@ -1,13 +1,9 @@
-import fs from "fs";
+import readJsonFile from "@/utils/readJsonFile";
 
 export default function handler(req, res) {
   if (req.method === "GET") {
     try {
-      const data = JSON.parse(
-        fs
-          .readFileSync(process.cwd() + "\\public\\restaurantData.json")
-          .toString()
-      );
+      const data = readJsonFile();
       const sustainability = data.restaurant.sustainability;
       res.status(200).json(sustainability);
     } catch (error) {
