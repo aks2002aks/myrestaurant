@@ -1,9 +1,13 @@
-import { readJsonFile } from "@/utils/readJson";
+import fs from "fs";
 
 export default function handler(req, res) {
   if (req.method === "GET") {
     try {
-      const data = readJsonFile();
+      const data = JSON.parse(
+        fs
+          .readFileSync(process.cwd() + "\\public\\restaurantData.json")
+          .toString()
+      );
       const awards = data.restaurant.awards;
       res.status(200).json(awards);
     } catch (error) {

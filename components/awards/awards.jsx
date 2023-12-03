@@ -23,8 +23,7 @@ export const Awards = ({awardsRef}) => {
           <div className="flex items-center flex-wrap px-2 md:px-0">
             <div className="relative lg:w-6/12 lg:py-12 xl:py-18">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-96 p-5 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300">
-                {awards &&
-                  awards.map((award, index) => (
+                {awards?.map((award, index) => (
                     <div
                       key={index}
                       className="flex bg-yellow-900 p-4 rounded-xl"
