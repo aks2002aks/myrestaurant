@@ -1,9 +1,14 @@
-# Restaurant Web App
+![image](https://github.com/aks2002aks/myrestaurant/assets/102814881/e8e24089-b5ea-4f78-8b4a-d61e0a9f6794)![image](https://github.com/aks2002aks/myrestaurant/assets/102814881/23f2e194-81b0-465c-96f4-1be9d86e6776)# Restaurant Web App
 
 Welcome to the Restaurant Web App repository! This web application is designed to showcase various features related to a restaurant, including ambiance, awards, chef information, events, menu, reviews, and sustainability.
 
+You can Visit this website on vercel
+
+[Visit My Website]([https://www.example.com](https://myrestaurant-olive.vercel.app/))
+
 ## Table of Contents
 
+- [Images](#images)
 - [Components](#components)
 - [Pages](#pages)
 - [API](#api)
@@ -12,6 +17,20 @@ Welcome to the Restaurant Web App repository! This web application is designed t
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Images
+
+![Slider](https://ibb.co/TgpMC81)
+![Events](https://ibb.co/nDVYdjn)
+![Location](https://ibb.co/hZwcdtm)
+![ShortMenu](https://ibb.co/mR0YXb1)
+![Menu](https://ibb.co/JxD9TZh)
+![Awards](https://ibb.co/rp6Mvkj)
+![Ambiance](https://ibb.co/ThYgddv)
+![Chef](https://ibb.co/SsKsps9)
+![SusatianbilityInitiatives](https://ibb.co/h1Bv3Xf)
+![Reviews](https://ibb.co/7QqPT6y)
+
 
 ## Components
 
@@ -114,6 +133,7 @@ The project fetches data from a backend API that provides information about the 
     ]
   }
 }
+```
 
 ## API Routes
 The project uses the following API functions:
