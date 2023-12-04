@@ -154,6 +154,7 @@ The project uses the following API functions:
 
 The project file structure is organized as follows:
 
+.
 |-- components
 |-- pages
 |-- api
@@ -170,6 +171,7 @@ The project file structure is organized as follows:
 |-- postcss.config.js
 |-- README.md
 |-- tailwind.config.js
+
 
 
 ## Usage
