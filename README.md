@@ -1,40 +1,197 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Restaurant Web App
 
-## Getting Started
+Welcome to the Restaurant Web App repository! This web application is designed to showcase various features related to a restaurant, including ambiance, awards, chef information, events, menu, reviews, and sustainability.
 
-First, run the development server:
+You can Visit this website on vercel
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[Visit My Website](https://myrestaurant-olive.vercel.app/)
+
+## Table of Contents
+
+- [Images](#images)
+- [Components](#components)
+- [Pages](#pages)
+- [API](#api)
+- [File Structure](#file-structure)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Images
+
+![Slider](https://i.ibb.co/87Tgh5b/image.png)
+![Events](https://i.ibb.co/XzdK0t3/image.png)
+![Location](https://i.ibb.co/MGQf13C/image.png)
+![ShortMenu](https://i.ibb.co/0nKWFm8/image.png)
+![Menu](https://i.ibb.co/HN5jyZJ/image.png)
+![Awards](https://i.ibb.co/X5spVXQ/image.png)
+![Ambiance](https://i.ibb.co/HgBH33F/image.png)
+![Chef](https://i.ibb.co/ZLhLCLk/image.png)
+![SusatianbilityInitiatives](https://i.ibb.co/HptQ5Nd/image.png)
+![Reviews](https://i.ibb.co/jzSmx14/image.png)
+
+
+## Components
+
+The project includes the following components:
+
+- Ambiance: `ambiance.jsx`
+- Awards: `awards.jsx`
+- Chef: `chef.jsx`
+- Events: `event.jsx`
+- Footer: `footer.jsx`
+- Location: `location.jsx`
+- Menu: `foodItem.jsx`, `menuFull.jsx`, `restaurantMenu.jsx`, `shortMenu.jsx`
+- Navbar: `navbar.jsx`
+- Reviews: `rating.jsx`, `review.jsx`
+- Slider: `Images.js`, `slider.js`
+- Sustainability: `sustainability.jsx`
+- Layout: `Layout.jsx`
+
+## Pages
+
+- Ambiance: `ambiance.jsx`
+- Awards: `awards.jsx`
+- Chef: `chef.jsx`
+- Events: `event.jsx`
+- Footer: `footer.jsx`
+- Location: `location.jsx`
+- Menu: `foodItem.jsx`, `menuFull.jsx`, `restaurantMenu.jsx`, `shortMenu.jsx`
+- Navbar: `navbar.jsx`
+- Reviews: `rating.jsx`, `review.jsx`
+- Slider: `Images.js`, `slider.js`
+- Sustainability: `sustainability.jsx`
+- Layout: `Layout.jsx`
+
+## API
+
+The project fetches data from a backend API that provides information about the restaurant. The API returns the following structure:
+
+```json
+{
+  "restaurant": {
+    "name": "Epicurean Symphony",
+    "location": {
+      "address": "123 Gourmet Avenue, Culinary Metropolis",
+      "latitude": 40.7128,
+      "longitude": -74.006
+    },
+    "chef": {
+      "name": "Chef Isabella Culinary Maestro",
+      "bio": "An internationally renowned chef with a flair for creating culinary masterpieces that transcend borders.",
+      "signature_dish": "Mango Tango Fusion"
+    },
+    "awards": [
+      {
+        "year": 2023,
+        "organization": "Michelin Guide",
+        "award": "Three Michelin Stars"
+      },
+      // ... (Other awards)
+    ],
+    "ambiance": {
+      "description": "Epicurean Symphony offers a sophisticated and cozy ambiance, with contemporary decor and soft lighting, creating the perfect setting for an unforgettable dining experience."
+    },
+    "sustainability": {
+      "initiatives": [
+        {
+          "name": "Farm-to-Table",
+          "description": "We source our ingredients locally to support farmers and ensure the freshest, seasonal produce in our dishes."
+        },
+        // ... (Other sustainability initiatives)
+      ]
+    },
+    "events": {
+      "upcoming_events": [
+        {
+          "name": "Culinary Artistry Showcase",
+          "date": "2023-12-15",
+          "description": "Join us for a night of culinary artistry as Chef Isabella presents her latest creations in an exclusive tasting event."
+        },
+        // ... (Other upcoming events)
+      ]
+    },
+    "online_presence": {
+      "website": "https://www.epicureansymphony.com",
+      "social_media": {
+        "facebook": "https://www.facebook.com/epicureansymphony",
+        "instagram": "https://www.instagram.com/epicureansymphony",
+        "twitter": "https://www.twitter.com/epicureansymph"
+      }
+    },
+    "menu": {
+      "categories": [
+        // ... (Menu categories and items)
+      ],
+      "seasonal_menu": {
+        // ... (Seasonal menu details)
+      }
+    },
+    "reviews": [
+      // ... (Customer reviews)
+    ]
+  }
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## API Routes
+The project uses the following API functions:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- `getRestaurantAmbiance.js`
+- `getRestaurantAwards.js`
+- `getRestaurantChef.js`
+- `getRestaurantEvents.js`
+- `getRestaurantLocation.js`
+- `getRestaurantMenu.js`
+- `getRestaurantName.js`
+- `getRestaurantReviews.js`
+- `getRestaurantSocials.js`
+- `getRestaurantSustainability.js`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## File Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project file structure is organized as follows:
 
-## Learn More
+.
+|-- components
+|-- pages
+|-- api
+|-- public
+|-- lib
+|-- styles
+|-- utils
+|-- .gitignore
+|-- .eslintrc.json
+|-- jsconfig.json
+|-- next.config.js
+|-- package-lock.json
+|-- package.json
+|-- postcss.config.js
+|-- README.md
+|-- tailwind.config.js
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+To run the project locally, follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the application with `npm run dev`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Dependencies
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Contributing
+
+Feel free to contribute to the project by opening issues or pull requests. Your input is highly appreciated.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
