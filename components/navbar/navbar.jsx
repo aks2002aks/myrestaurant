@@ -47,7 +47,7 @@ export const Navbar = ({
   };
 
   return (
-    <nav className=" fixed z-50 w-full  top-0 ">
+    <nav className=" fixed z-50 w-full  top-0">
       <div className="container m-auto px-2 md:px-12 lg:px-7 bg-black mt-3 bg-opacity-70 rounded-full">
         <div className="relative flex flex-wrap items-center justify-between py-3 gap-6 md:py-4 md:gap-0">
           <div className="w-full px-6 flex justify-between lg:w-max md:px-0">

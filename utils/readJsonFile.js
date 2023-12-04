@@ -1,5 +1,5 @@
 import { readFileSync } from "fs";
-import path from 'path';
+import path from "path";
 
 export default function readJsonFile() {
   try {
