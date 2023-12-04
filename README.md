@@ -1,10 +1,10 @@
-![image](https://github.com/aks2002aks/myrestaurant/assets/102814881/e8e24089-b5ea-4f78-8b4a-d61e0a9f6794)![image](https://github.com/aks2002aks/myrestaurant/assets/102814881/23f2e194-81b0-465c-96f4-1be9d86e6776)# Restaurant Web App
+# Restaurant Web App
 
 Welcome to the Restaurant Web App repository! This web application is designed to showcase various features related to a restaurant, including ambiance, awards, chef information, events, menu, reviews, and sustainability.
 
 You can Visit this website on vercel
 
-[Visit My Website]([https://www.example.com](https://myrestaurant-olive.vercel.app/))
+[Visit My Website](https://myrestaurant-olive.vercel.app/)
 
 ## Table of Contents
 
@@ -20,16 +20,16 @@ You can Visit this website on vercel
 
 ## Images
 
-![Slider](https://ibb.co/TgpMC81)
-![Events](https://ibb.co/nDVYdjn)
-![Location](https://ibb.co/hZwcdtm)
-![ShortMenu](https://ibb.co/mR0YXb1)
-![Menu](https://ibb.co/JxD9TZh)
-![Awards](https://ibb.co/rp6Mvkj)
-![Ambiance](https://ibb.co/ThYgddv)
-![Chef](https://ibb.co/SsKsps9)
-![SusatianbilityInitiatives](https://ibb.co/h1Bv3Xf)
-![Reviews](https://ibb.co/7QqPT6y)
+![Slider](https://i.ibb.co/87Tgh5b/image.png)
+![Events](https://i.ibb.co/XzdK0t3/image.png)
+![Location](https://i.ibb.co/MGQf13C/image.png)
+![ShortMenu](https://i.ibb.co/0nKWFm8/image.png)
+![Menu](https://i.ibb.co/HN5jyZJ/image.png)
+![Awards](https://i.ibb.co/X5spVXQ/image.png)
+![Ambiance](https://i.ibb.co/HgBH33F/image.png)
+![Chef](https://i.ibb.co/ZLhLCLk/image.png)
+![SusatianbilityInitiatives](https://i.ibb.co/HptQ5Nd/image.png)
+![Reviews](https://i.ibb.co/jzSmx14/image.png)
 
 
 ## Components
