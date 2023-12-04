@@ -10,14 +10,14 @@ export const FoodItem = ({
   ingredients,
 }) => {
   return (
-    <div className="bg-yellow-900 border text-white border-gray-200 rounded-lg shadow  w-[275px] m-2">
+    <div className="bg-yellow-900 border text-white border-gray-200 rounded-lg shadow   max-w-sm m-1">
       <div className="flex flex-col">
         <Image
-          className="rounded-t-lg w-80"
-          src={`https://source.unsplash.com/random/275x200?${name}`}
+          className="rounded-t-lg w-[384px]"
+          src={`https://source.unsplash.com/random/384x200?${name}`}
           alt=""
           height={200}
-          width={275}
+          width={384}
         />
       </div>
 

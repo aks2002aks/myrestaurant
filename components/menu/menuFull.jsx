@@ -223,13 +223,13 @@ export const MenuFull = () => {
                   </div>
 
                   {/* Filters */}
-                  <form className="hidden lg:block">
+                  <form className="block lg:hidden">
                     <h3 className="sr-only">Categories</h3>
                     {filters.map((section) => (
                       <Disclosure
                         as="div"
                         key={section.id}
-                        className="border-b border-gray-200 py-6"
+                        className="border-b border-gray-200 py-6 px-3"
                       >
                         {({ open }) => (
                           <>
