@@ -47,6 +47,75 @@ The project includes the following components:
 
 ## API
 
+The project fetches data from a backend API that provides information about the restaurant. The API returns the following structure:
+
+```json
+{
+  "restaurant": {
+    "name": "Epicurean Symphony",
+    "location": {
+      "address": "123 Gourmet Avenue, Culinary Metropolis",
+      "latitude": 40.7128,
+      "longitude": -74.006
+    },
+    "chef": {
+      "name": "Chef Isabella Culinary Maestro",
+      "bio": "An internationally renowned chef with a flair for creating culinary masterpieces that transcend borders.",
+      "signature_dish": "Mango Tango Fusion"
+    },
+    "awards": [
+      {
+        "year": 2023,
+        "organization": "Michelin Guide",
+        "award": "Three Michelin Stars"
+      },
+      // ... (Other awards)
+    ],
+    "ambiance": {
+      "description": "Epicurean Symphony offers a sophisticated and cozy ambiance, with contemporary decor and soft lighting, creating the perfect setting for an unforgettable dining experience."
+    },
+    "sustainability": {
+      "initiatives": [
+        {
+          "name": "Farm-to-Table",
+          "description": "We source our ingredients locally to support farmers and ensure the freshest, seasonal produce in our dishes."
+        },
+        // ... (Other sustainability initiatives)
+      ]
+    },
+    "events": {
+      "upcoming_events": [
+        {
+          "name": "Culinary Artistry Showcase",
+          "date": "2023-12-15",
+          "description": "Join us for a night of culinary artistry as Chef Isabella presents her latest creations in an exclusive tasting event."
+        },
+        // ... (Other upcoming events)
+      ]
+    },
+    "online_presence": {
+      "website": "https://www.epicureansymphony.com",
+      "social_media": {
+        "facebook": "https://www.facebook.com/epicureansymphony",
+        "instagram": "https://www.instagram.com/epicureansymphony",
+        "twitter": "https://www.twitter.com/epicureansymph"
+      }
+    },
+    "menu": {
+      "categories": [
+        // ... (Menu categories and items)
+      ],
+      "seasonal_menu": {
+        // ... (Seasonal menu details)
+      }
+    },
+    "reviews": [
+      // ... (Customer reviews)
+    ]
+  }
+}
+
+## API Routes
 The project uses the following API functions:
 
 - `getRestaurantAmbiance.js`
@@ -59,6 +128,7 @@ The project uses the following API functions:
 - `getRestaurantReviews.js`
 - `getRestaurantSocials.js`
 - `getRestaurantSustainability.js`
+
 
 ## File Structure
 
