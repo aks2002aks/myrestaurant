@@ -154,6 +154,22 @@ The project uses the following API functions:
 
 The project file structure is organized as follows:
 
+|-- components
+|-- pages
+|-- api
+|-- public
+|-- lib
+|-- styles
+|-- utils
+|-- .gitignore
+|-- .eslintrc.json
+|-- jsconfig.json
+|-- next.config.js
+|-- package-lock.json
+|-- package.json
+|-- postcss.config.js
+|-- README.md
+|-- tailwind.config.js
 
 
 ## Usage
