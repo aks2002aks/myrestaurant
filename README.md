@@ -1,40 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Restaurant Web App
 
-## Getting Started
+Welcome to the Restaurant Web App repository! This web application is designed to showcase various features related to a restaurant, including ambiance, awards, chef information, events, menu, reviews, and sustainability.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Components](#components)
+- [Pages](#pages)
+- [API](#api)
+- [File Structure](#file-structure)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Components
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The project includes the following components:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Ambiance: `ambiance.jsx`
+- Awards: `awards.jsx`
+- Chef: `chef.jsx`
+- Events: `event.jsx`
+- Footer: `footer.jsx`
+- Location: `location.jsx`
+- Menu: `foodItem.jsx`, `menuFull.jsx`, `restaurantMenu.jsx`, `shortMenu.jsx`
+- Navbar: `navbar.jsx`
+- Reviews: `rating.jsx`, `review.jsx`
+- Slider: `Images.js`, `slider.js`
+- Sustainability: `sustainability.jsx`
+- Layout: `Layout.jsx`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Ambiance: `ambiance.jsx`
+- Awards: `awards.jsx`
+- Chef: `chef.jsx`
+- Events: `event.jsx`
+- Footer: `footer.jsx`
+- Location: `location.jsx`
+- Menu: `foodItem.jsx`, `menuFull.jsx`, `restaurantMenu.jsx`, `shortMenu.jsx`
+- Navbar: `navbar.jsx`
+- Reviews: `rating.jsx`, `review.jsx`
+- Slider: `Images.js`, `slider.js`
+- Sustainability: `sustainability.jsx`
+- Layout: `Layout.jsx`
 
-## Learn More
+## API
 
-To learn more about Next.js, take a look at the following resources:
+The project uses the following API functions:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `getRestaurantAmbiance.js`
+- `getRestaurantAwards.js`
+- `getRestaurantChef.js`
+- `getRestaurantEvents.js`
+- `getRestaurantLocation.js`
+- `getRestaurantMenu.js`
+- `getRestaurantName.js`
+- `getRestaurantReviews.js`
+- `getRestaurantSocials.js`
+- `getRestaurantSustainability.js`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## File Structure
 
-## Deploy on Vercel
+The project file structure is organized as follows:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Usage
+
+To run the project locally, follow these steps:
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the application with `npm run dev`.
+
+## Dependencies
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Contributing
+
+Feel free to contribute to the project by opening issues or pull requests. Your input is highly appreciated.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
